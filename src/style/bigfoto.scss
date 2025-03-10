@@ -1,0 +1,30 @@
+.big-foto {
+    position: relative;
+    width: 100%;
+    height: 80vh; // Juster højden efter behov
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  
+    .background-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; // Sørger for, at billedet dækker hele området
+    }
+  
+    .logo {
+      position: absolute;
+      max-width: 30%; // Juster størrelsen efter behov
+      height: auto;
+    }
+  
+    @media (max-width: 768px) {
+      height: 40vh; // Mindre højde på mobil
+  
+      .logo {
+        max-width: 50%; // Gør logoet større på mindre skærme
+      }
+    }
+  }
+  
